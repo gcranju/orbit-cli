@@ -19,6 +19,7 @@ program
   .requiredOption('-p, --params <params>', 'Method parameters in JSON format')
   .requiredOption('-c, --chain <chain>', 'Blockchain to interact with')
   .option('-s, --sender <keypair_file_path>', 'Path to the sender\'s Solana keypair file')
+  .option('-u, --url <url>', 'URL of the target blockchain')
   .option('-e, --env <environment>', 'Environment (mainnet/testnet)', 'testnet')
   .option('--sub-chain <sub_chain>', 'Sub-chain for EVM chains (e.g., avalanche, polygon)')
   .action(callCommand);
